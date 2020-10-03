@@ -1,5 +1,6 @@
 void LineEdit()
 {
+	//利用字符栈S，从终端接受一行并传送至调用过程的数据区
 	InitStack(S);
 	ch = getchar();
 	while (ch != EOF)
