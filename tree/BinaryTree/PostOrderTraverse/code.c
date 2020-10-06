@@ -10,3 +10,13 @@ typedef struct BiNode
     TElemType data;
     struct BiNode *lchild, *rchild;
 } BiNode, *BiTree;
+
+void PostOrder(BiTree T)
+{
+    if (T != NULL)
+    {
+        PostOrder(T->lchild);
+        PostOrder(T->rchild);
+        visit(T);
+    }
+}
